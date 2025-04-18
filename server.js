@@ -19,8 +19,8 @@ app.use(cors());
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-mongoose.connect('mongodb://localhost:27017/todoagain').then(()=>{
+// TTpiYGJsTE75NMKd
+mongoose.connect('mongodb+srv://subash56:TTpiYGJsTE75NMKd@cluster56.hphvs.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster56').then(()=>{
     console.log("DB connected .......");
 }).catch((err)=>{
     console.log(err);
