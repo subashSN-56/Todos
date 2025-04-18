@@ -15,6 +15,9 @@ const port = 8000;
 
 app.use(express.json());
 app.use(cors());
+// 💡 Serve frontend files from 'public' folder
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 mongoose.connect('mongodb://localhost:27017/todoagain').then(()=>{

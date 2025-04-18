@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:8000/todos";
+// Use relative path because frontend and backend are on same domain
+const API_URL = "/todos"; 
+
 const form = document.getElementById("todo-form");
 const todoList = document.getElementById("todo-list");
 
